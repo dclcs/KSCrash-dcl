@@ -14,6 +14,10 @@
 		6FE634662AE3734C00DB35B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE634652AE3734C00DB35B5 /* Assets.xcassets */; };
 		6FE634692AE3734C00DB35B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE634672AE3734C00DB35B5 /* LaunchScreen.storyboard */; };
 		6FE6346C2AE3734C00DB35B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6346B2AE3734C00DB35B5 /* main.m */; };
+		6FE634772AE376E300DB35B5 /* KSCrashMonitor_MachException.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FE634762AE376E300DB35B5 /* KSCrashMonitor_MachException.c */; };
+		6FE6347A2AE376FE00DB35B5 /* KSCrashMonitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FE634792AE376FE00DB35B5 /* KSCrashMonitor.c */; };
+		6FE6347E2AE378B200DB35B5 /* KSLogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6347D2AE378B200DB35B5 /* KSLogger.c */; };
+		6FE634822AE3EC7800DB35B5 /* KSThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FE634812AE3EC7800DB35B5 /* KSThread.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,15 @@
 		6FE634682AE3734C00DB35B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FE6346A2AE3734C00DB35B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FE6346B2AE3734C00DB35B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FE634752AE376E300DB35B5 /* KSCrashMonitor_MachException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_MachException.h; sourceTree = "<group>"; };
+		6FE634762AE376E300DB35B5 /* KSCrashMonitor_MachException.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KSCrashMonitor_MachException.c; sourceTree = "<group>"; };
+		6FE634782AE376FE00DB35B5 /* KSCrashMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor.h; sourceTree = "<group>"; };
+		6FE634792AE376FE00DB35B5 /* KSCrashMonitor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KSCrashMonitor.c; sourceTree = "<group>"; };
+		6FE6347C2AE378B200DB35B5 /* KSLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSLogger.h; sourceTree = "<group>"; };
+		6FE6347D2AE378B200DB35B5 /* KSLogger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KSLogger.c; sourceTree = "<group>"; };
+		6FE6347F2AE3E59200DB35B5 /* KSSystemCapabilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSSystemCapabilities.h; sourceTree = "<group>"; };
+		6FE634802AE3EC7800DB35B5 /* KSThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSThread.h; sourceTree = "<group>"; };
+		6FE634812AE3EC7800DB35B5 /* KSThread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KSThread.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 		6FE634582AE3734B00DB35B5 /* KSCrash-dcl */ = {
 			isa = PBXGroup;
 			children = (
+				6FE634722AE3735400DB35B5 /* KSCrash */,
 				6FE634592AE3734B00DB35B5 /* AppDelegate.h */,
 				6FE6345A2AE3734B00DB35B5 /* AppDelegate.m */,
 				6FE6345C2AE3734B00DB35B5 /* SceneDelegate.h */,
@@ -74,6 +88,46 @@
 				6FE6346B2AE3734C00DB35B5 /* main.m */,
 			);
 			path = "KSCrash-dcl";
+			sourceTree = "<group>";
+		};
+		6FE634722AE3735400DB35B5 /* KSCrash */ = {
+			isa = PBXGroup;
+			children = (
+				6FE634732AE3738000DB35B5 /* Crash Recording */,
+			);
+			path = KSCrash;
+			sourceTree = "<group>";
+		};
+		6FE634732AE3738000DB35B5 /* Crash Recording */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6347B2AE3789F00DB35B5 /* Tools */,
+				6FE634742AE376C000DB35B5 /* Monitors */,
+				6FE6347F2AE3E59200DB35B5 /* KSSystemCapabilities.h */,
+			);
+			path = "Crash Recording";
+			sourceTree = "<group>";
+		};
+		6FE634742AE376C000DB35B5 /* Monitors */ = {
+			isa = PBXGroup;
+			children = (
+				6FE634752AE376E300DB35B5 /* KSCrashMonitor_MachException.h */,
+				6FE634762AE376E300DB35B5 /* KSCrashMonitor_MachException.c */,
+				6FE634782AE376FE00DB35B5 /* KSCrashMonitor.h */,
+				6FE634792AE376FE00DB35B5 /* KSCrashMonitor.c */,
+			);
+			path = Monitors;
+			sourceTree = "<group>";
+		};
+		6FE6347B2AE3789F00DB35B5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6347C2AE378B200DB35B5 /* KSLogger.h */,
+				6FE6347D2AE378B200DB35B5 /* KSLogger.c */,
+				6FE634802AE3EC7800DB35B5 /* KSThread.h */,
+				6FE634812AE3EC7800DB35B5 /* KSThread.c */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE6347A2AE376FE00DB35B5 /* KSCrashMonitor.c in Sources */,
+				6FE634822AE3EC7800DB35B5 /* KSThread.c in Sources */,
 				6FE634612AE3734B00DB35B5 /* ViewController.m in Sources */,
+				6FE6347E2AE378B200DB35B5 /* KSLogger.c in Sources */,
 				6FE6345B2AE3734B00DB35B5 /* AppDelegate.m in Sources */,
 				6FE6346C2AE3734C00DB35B5 /* main.m in Sources */,
+				6FE634772AE376E300DB35B5 /* KSCrashMonitor_MachException.c in Sources */,
 				6FE6345E2AE3734B00DB35B5 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

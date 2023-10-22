@@ -8,6 +8,12 @@
 #ifndef KSCrashMonitor_MachException_h
 #define KSCrashMonitor_MachException_h
 
-#include <stdio.h>
+
+
+#include "KSCrashMonitor.h"
+
+KSCrashMonitorAPI* kscm_machexception_getAPI(void);
+
+bool installExceptionHandler(void);
 
 #endif /* KSCrashMonitor_MachException_h */

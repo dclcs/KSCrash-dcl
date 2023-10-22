@@ -7,10 +7,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-
+#import "KSCrash/Crash Recording/Monitors/KSCrashMonitor_MachException.h"
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
+    installExceptionHandler();
     @autoreleasepool {
+        
         // Setup code that might create autoreleased objects goes here.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
