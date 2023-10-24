@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FAC253B2AE7F5060011C34C /* KSCrashMonitor_NSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC253A2AE7F5060011C34C /* KSCrashMonitor_NSException.m */; };
 		6FE6345B2AE3734B00DB35B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6345A2AE3734B00DB35B5 /* AppDelegate.m */; };
 		6FE6345E2AE3734B00DB35B5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6345D2AE3734B00DB35B5 /* SceneDelegate.m */; };
 		6FE634612AE3734B00DB35B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE634602AE3734B00DB35B5 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FAC25392AE7F5060011C34C /* KSCrashMonitor_NSException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_NSException.h; sourceTree = "<group>"; };
+		6FAC253A2AE7F5060011C34C /* KSCrashMonitor_NSException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCrashMonitor_NSException.m; sourceTree = "<group>"; };
 		6FE634562AE3734B00DB35B5 /* KSCrash-dcl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KSCrash-dcl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE634592AE3734B00DB35B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FE6345A2AE3734B00DB35B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				6FE634762AE376E300DB35B5 /* KSCrashMonitor_MachException.c */,
 				6FE634782AE376FE00DB35B5 /* KSCrashMonitor.h */,
 				6FE634792AE376FE00DB35B5 /* KSCrashMonitor.c */,
+				6FAC25392AE7F5060011C34C /* KSCrashMonitor_NSException.h */,
+				6FAC253A2AE7F5060011C34C /* KSCrashMonitor_NSException.m */,
 			);
 			path = Monitors;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			files = (
 				6FE6347A2AE376FE00DB35B5 /* KSCrashMonitor.c in Sources */,
 				6FE634822AE3EC7800DB35B5 /* KSThread.c in Sources */,
+				6FAC253B2AE7F5060011C34C /* KSCrashMonitor_NSException.m in Sources */,
 				6FE634612AE3734B00DB35B5 /* ViewController.m in Sources */,
 				6FE6347E2AE378B200DB35B5 /* KSLogger.c in Sources */,
 				6FE6345B2AE3734B00DB35B5 /* AppDelegate.m in Sources */,
